@@ -1,0 +1,132 @@
+#wrapper {	
+	border-style: solid;
+	border-width: 3px;
+	border-color: #000000;
+	background-color: #F9E784;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rightfloater {
+	float: right;
+}
+/* min-width used to minimize distortion created by intersecting elements. */
+body {
+	overflow: auto;
+	background-size: cover;
+	background-color: #888888;
+	font-family: Arial, Lato, sans-serif;
+}
+/* min-height used prevent displacement of footer text in home page likely needs to be redone as the project continues. */
+main {	
+	min-height: 330px;
+	background-color: #CBBB34;
+}
+h1 {
+	padding: 10px 10px;
+	text-align: center;
+	background-color: #DC8145;
+	margin: 0;
+}
+/* relative position added in case images need to be moved. */
+img {
+	position: relative;
+	padding: 20px 30px 0px 35px;
+}
+nav { 
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #8FCB34;
+	border-style: solid;
+	border-width: 3px 0px 3px 0px;
+}
+/* 1px bottom border width provided to fix minor visual issue in nav. */
+nav a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 0px 3px 1px 0px;
+	text-decoration: none;
+}
+nav a:link {
+	color: #000000;
+}
+nav a:visited {
+	color: #000066;
+}
+nav a:hover {
+	color: #0000A0;
+}
+h3 {
+	padding: 0px 0px 10px 20px;
+}
+h5 {
+	padding-right: 20px;
+	max-width: 300px;
+}
+table {
+	margin-top: 30%;
+	margin-right: 20px;
+	background-color: #000000;
+}
+td {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+th {
+	color: #FFFFFF;
+	background-color: #0000FF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+p {
+	padding: 0px 0px 10px 30px;
+	margin: 0;
+	max-width: 300px;
+}
+form { 
+	display: flex;
+	flex-direction: column;
+	width: 60%; 
+	gap: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
+	border-color: #000000;
+	border-style: solid;
+	border-width: 3px 0px 0px 0px;
+	text-align: center;
+	font-size: small;
+	background-color: #DC8145;
+}
+@media (max-width:800px) {
+	/* .content implemented here to provide flexbox for content elements. */
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+	.content > .rightfloater {
+		float: none;
+		order: 1;
+	}
+	.content > .text {
+		order: 0;
+	}
+	h5 {
+		padding: 5px 5px 5px 60px;
+	}
+	img {
+		padding: 5px 5px 5px 100px;
+	}
+	table {
+		margin-top: auto;
+		margin-right: 0px;
+		margin-left: 30px;
+	}
+}
+
