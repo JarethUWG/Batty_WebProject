@@ -10,6 +10,27 @@
 .rightfloater {
 	float: right;
 }
+.equalities {
+	width: 50%;
+}
+/* right space given to give space from right alignment */
+.equalities ul {
+	list-style-type: none;
+	position: relative;
+	right: 200px;
+}
+/* absolute position given to allow for stacking of transparent images */
+.equalities span { 
+	position: absolute; 
+	top: 36px; 
+	left: 130px;
+	opacity: 0;
+	text-align: center;
+	transition: opacity 1s ease-in-out; 
+}
+.equalities a:hover span {   
+	opacity: 1; 
+} 
 /* min-width used to minimize distortion created by intersecting elements. */
 body {
 	overflow: auto;
@@ -116,6 +137,17 @@ footer {
 	}
 	.content > .text {
 		order: 0;
+	}
+	.equalities ul {
+		position: relative;
+		right: 100px;
+	}
+	.equalities span { 
+		left: 230px;
+	}
+	/* done to remove unusual spacing caused by shifting the highlight images. */
+	.equalities span img { 
+		padding: 0px;
 	}
 	h5 {
 		padding: 5px 5px 5px 60px;
