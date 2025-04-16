@@ -32,12 +32,16 @@
 	opacity: 1; 
 } 
 .product {
-	background-color: #FFFFFF;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 2px;
+	background-color: #d5ff8c;
 	height: 120px;
 	width: 300px;
 	margin: 10px;
 	margin-right: 10px;
 }
+/* font-size changed here to fit within the limited product space */
 .product p {
 	font-size: small;
 	padding-top: 10px;
@@ -172,11 +176,7 @@ footer {
 		padding: 0px;
 	}
 	.product {
-		background-color: #FFFFFF;
-		height: 120px;
-		width: 350px;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		width: 330px;
 		margin-right: auto;
 		margin-left: auto;
 	}
