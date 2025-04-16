@@ -31,11 +31,25 @@
 .equalities a:hover span {   
 	opacity: 1; 
 } 
+.product {
+	background-color: #FFFFFF;
+	height: 120px;
+	width: 300px;
+	margin: 10px;
+	margin-right: 10px;
+}
+.product p {
+	font-size: small;
+	padding-top: 10px;
+}
+.product img {
+	float: right;
+}
 /* min-width used to minimize distortion created by intersecting elements. */
 body {
 	overflow: auto;
 	background-size: cover;
-	background-color: #888888;
+	background-color: #AAAAAA;
 	font-family: Arial, Lato, sans-serif;
 }
 /* min-height used prevent displacement of footer text in home page likely needs to be redone as the project continues. */
@@ -67,7 +81,15 @@ nav a {
 	padding-bottom: 3px;
 	border-color: #000000;
 	border-style: solid;
-	border-width: 0px 3px 1px 0px;
+	border-width: 0px 2px 1px 0px;
+	text-decoration: none;
+}
+nav .rightfloater a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 0px 0px 1px 2px;
 	text-decoration: none;
 }
 nav a:link {
@@ -149,6 +171,15 @@ footer {
 	.equalities span img { 
 		padding: 0px;
 	}
+	.product {
+		background-color: #FFFFFF;
+		height: 120px;
+		width: 350px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 	h5 {
 		padding: 5px 5px 5px 60px;
 	}
@@ -161,4 +192,3 @@ footer {
 		margin-left: 30px;
 	}
 }
-
