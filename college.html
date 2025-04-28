@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- formManager used to redirect to appropriate resources -->
+<script>
+    function formManager() {
+    var selectedElement = document.getElementById("collegemathselector");
+    if (selectedElement.value == "none selected") {
+        alert ("No item selected. Please select a valid option.");
+        return false;
+    } if (selectedElement.value == "statisics") {
+        window.location = "statistics.html";
+        return true;
+    } 
+}
+</script>
+<head>
+<title>Adapting Academics College Math</title>
+<meta charset="utf-8">
+<meta name="description" content="The high school math homepage for Adapting Academics
+ which serves as a connection to all high school math.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<!-- wrapper div used for general formatting. -->
+<div id="wrapper">
+<h1>
+Adapting Academics College
+</h1>
+<main>
+<nav>
+<a href=index.html>
+&nbsp;Home&nbsp;
+</a>
+<div class="rightfloater">
+<a href="products.html">
+&nbsp;Products
+</a>
+<a href="about.html">
+&nbsp;About&nbsp;
+</a>
+</div>
+</nav>
+<!-- content helps format the primary content of the page. -->
+<div class = content>
+<div class="rightfloater">
+<img src="betaacademics.png" alt="Adapting Academics" width="170" height="170">
+<h5>
+Adapting Academics for a better tomorrow.
+</h5>
+</div>
+<div class="selectorarea">
+<p>
+    Adapting Academics provides a wide variety of different college math courses.
+    Use the drop down menu below to pick the topic you wish to go over.
+</p>
+<form name="collegemath" id="collegemath">
+<select size="1" id="collegemathselector">
+    <option value="none selected">Please select your math topic</option>
+    <option value="statisics">Statisics</option>
+</select>
+<input type="button" onclick="formManager()" value="Go to topic.">
+</form>
+</div>
+</div>
+</main>
+<footer>
+Copyright &copy; 2025 Jareth Batty <br>
+<a href="mailto:jbatty1@my.westga.edu">jareth@batty.com</a>
+</footer>
+</div>
+</html>
