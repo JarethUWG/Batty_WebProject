@@ -53,6 +53,13 @@
 .product img {
 	float: right;
 }
+.fotorama {
+	max-width: 280px;
+	margin-top: 50%;
+	display: flex;
+	-ms-flex-align: end;
+	padding-right: 10px;
+}
 /* min-width used to minimize distortion created by intersecting elements. */
 body {
 	overflow: auto;
@@ -183,6 +190,12 @@ footer {
 		width: 330px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+	.fotorama {
+		margin-top: 0%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 0px;
 	}
 	h5 {
 		padding: 5px 5px 5px 60px;

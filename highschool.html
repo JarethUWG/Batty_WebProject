@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- formManager used to redirect to appropriate resources -->
+<head>
+<title>Adapting Academics High School Math</title>
+<meta charset="utf-8">
+<meta name="description" content="The high school math homepage for Adapting Academics
+ which serves as a connection to all high school math.">
+<link rel="stylesheet" href="styles.css">
 <script>
     function formManager() {
     var selectedElement = document.getElementById("highmathselector");
@@ -10,15 +16,12 @@
     } if (selectedElement.value == "equalities") {
         window.location = "equalities.html";
         return true;
+    } if (selectedElement.value == "functions") {
+        window.location = "functions.html";
+        return true;
     } 
 }
 </script>
-<head>
-<title>Adapting Academics High School Math</title>
-<meta charset="utf-8">
-<meta name="description" content="The high school math homepage for Adapting Academics
- which serves as a connection to all high school math.">
-<link rel="stylesheet" href="styles.css">
 </head>
 <!-- wrapper div used for general formatting. -->
 <div id="wrapper">
@@ -56,6 +59,7 @@ Adapting Academics for a better tomorrow.
 <select size="1" id="highmathselector">
     <option value="none selected">Please select your math topic</option>
     <option value="equalities">Equalities</option>
+    <option value="functions">Functions</option>
 </select>
 <input type="button" onclick="formManager()" value="Go to topic.">
 </form>
