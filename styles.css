@@ -60,7 +60,7 @@
 	-ms-flex-align: end;
 	padding-right: 10px;
 }
-.audioversion {
+.mediashifter {
 	padding-top: 10px;
 	padding-right: 10px;
 }
@@ -206,7 +206,7 @@ footer {
 		margin-left: auto;
 		padding-left: 30px;
 	}
-	.audioversion {
+	.mediashifter {
 		padding: 10px 0px 10px 30px;
 	}
 	h5 {

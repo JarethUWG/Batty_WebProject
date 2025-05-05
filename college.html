@@ -20,6 +20,10 @@
         window.location = "trigonometry.html";
         return true;
     } 
+    if (selectedElement.value == "calculus") {
+        window.location = "calculus.html";
+        return true;
+    }
 }
 </script>
 </head>
@@ -60,6 +64,7 @@ Adapting Academics for a better tomorrow.
     <option value="none selected">Please select your math topic</option>
     <option value="statisics">Statisics</option>
     <option value="trigonometry">Trigonometry</option>
+    <option value="calculus">Calculus</option>
 </select>
 <input type="button" onclick="formManager()" value="Go to topic.">
 </form>
