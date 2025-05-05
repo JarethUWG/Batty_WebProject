@@ -19,6 +19,9 @@
     } if (selectedElement.value == "functions") {
         window.location = "functions.html";
         return true;
+    } if (selectedElement.value == "geometry") {
+        window.location = "geometry.html";
+        return true;
     } 
 }
 </script>
@@ -60,6 +63,7 @@ Adapting Academics for a better tomorrow.
     <option value="none selected">Please select your math topic</option>
     <option value="equalities">Equalities</option>
     <option value="functions">Functions</option>
+    <option value="geometry">Geometry</option>
 </select>
 <input type="button" onclick="formManager()" value="Go to topic.">
 </form>

@@ -60,6 +60,10 @@
 	-ms-flex-align: end;
 	padding-right: 10px;
 }
+.audioversion {
+	padding-top: 10px;
+	padding-right: 10px;
+}
 /* min-width used to minimize distortion created by intersecting elements. */
 body {
 	overflow: auto;
@@ -201,6 +205,9 @@ footer {
 		margin-right: auto;
 		margin-left: auto;
 		padding-left: 30px;
+	}
+	.audioversion {
+		padding: 10px 0px 10px 30px;
 	}
 	h5 {
 		padding: 5px 5px 5px 60px;
