@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>Adapting Academics College Math</title>
+<link rel="icon" type="image/x-icon" href="AdaptingAcademics.png">
 <meta charset="utf-8">
 <meta name="description" content="The college math homepage for Adapting Academics
  which serves as a connection to all college math.">
@@ -13,6 +14,9 @@
     if (selectedElement.value == "none selected") {
         alert ("No item selected. Please select a valid option.");
         return false;
+    } if (selectedElement.value == "calculus") {
+        window.location = "calculus.html";
+        return true;
     } if (selectedElement.value == "statisics") {
         window.location = "statistics.html";
         return true;
@@ -20,10 +24,7 @@
         window.location = "trigonometry.html";
         return true;
     } 
-    if (selectedElement.value == "calculus") {
-        window.location = "calculus.html";
-        return true;
-    }
+
 }
 </script>
 </head>
@@ -49,7 +50,7 @@ Adapting Academics College
 <!-- content helps format the primary content of the page. -->
 <div class = content>
 <div class="rightfloater">
-<img src="betaacademics.png" alt="Adapting Academics" width="170" height="170">
+<img src="AdaptingAcademics.png" alt="Adapting Academics" width="170" height="170">
 <h5>
 Adapting Academics for a better tomorrow.
 </h5>
@@ -62,9 +63,9 @@ Adapting Academics for a better tomorrow.
 <form name="collegemath" id="collegemath">
 <select size="1" id="collegemathselector">
     <option value="none selected">Please select your math topic</option>
+    <option value="calculus">Calculus</option>
     <option value="statisics">Statisics</option>
     <option value="trigonometry">Trigonometry</option>
-    <option value="calculus">Calculus</option>
 </select>
 <input type="button" onclick="formManager()" value="Go to topic.">
 </form>
